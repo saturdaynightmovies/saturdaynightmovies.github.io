@@ -1,0 +1,38 @@
+* {
+	font-family:"Helvetica Neue", Helvetica;
+	background-color:#550000;
+	color:white;
+}
+
+a:link {
+	text-decoration:none;
+}
+
+a:hover {
+	color:#ffaaaa;
+}
+
+nav {
+	width:70%;
+	margin:auto;
+	margin-bottom:50px;
+}
+
+nav li {
+	list-style-type:none;
+	display:inline-block;
+	font-size:30px;
+	width:24%;
+	text-align:center;
+}
+
+header img{
+	margin:auto;
+	display:block;
+	width:300px;
+}
+
+audio {
+	display:block;
+	margin:auto;
+}
