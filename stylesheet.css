@@ -1,9 +1,14 @@
 * {
 	font-family:"Helvetica Neue", Helvetica;
 	box-sizing: border-box;
-	background-color:#550000;
-	color:white;
-	border:1px black solid;
+	color:#c1a2a2;
+	padding:0;
+	margin:0;
+}
+
+body {
+	background-color:#321515;
+	
 }
 
 /* For mobile phones: */
@@ -52,6 +57,10 @@ header img{
 	width:300px;
 }
 
+h1 {
+	margin-bottom:20px;
+}
+
 ul {
 	list-style-type:none;
 	padding:0;
@@ -72,70 +81,44 @@ a:hover {
 }
 
 nav {
-	margin-bottom:50px;
+	margin:50px 0;
 }
 
-#audioplayer{
-	width: 480px;
-	height: 60px;
-	margin: 50px auto auto auto;
-	border: solid;
+.controls {
+	float:left;
+	width:20%;
+	border-radius:50%;
+	background-color:#321515;
 }
 
-#pButton{
-    height:60px; 
-    width: 60px;
-    border: none;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    float:left;
-    outline:none;
+#timeline {
+	width: 70%;
+	height: 15px;
+	background: #321515;
+	margin-left:5%;
+	float:left;
+	border-radius:12px;
 }
 
-.play{background: url('http://www.alexkatz.me/codepen/images/play.png') ;}
-.pause{background: url('http://www.alexkatz.me/codepen/images/pause.png') ;}
-
-#timeline{
-	width: 400px;
-	height: 20px;
-	margin-top: 20px;
-	float: left;
-	border-radius: 15px;
-	background: rgba(0,0,0,.3);
-  
-}
-#playhead{
-	width: 18px;
-	height: 18px;
+#playhead {
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
-	margin-top: 1px;
-	background: rgba(0, 0, 0,1);
-
+	margin-bottom: 30px;
+	background: #c1a2a2;
 }
 
+.details {
+	float:left;
+	margin:20px;
+	margin-left:38px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+article {
+	background-color:#230b0b;
+	margin:25px 0;
+	padding:10px;
+}
 
 
 
