@@ -54,7 +54,7 @@ body {
 header img{
 	margin:auto;
 	display:block;
-	width:300px;
+	width:200px;
 }
 
 h1 {
@@ -85,10 +85,25 @@ nav {
 }
 
 .controls {
+	width:130px;
+	height:130px;
 	float:left;
-	width:20%;
 	border-radius:50%;
+	background-size:80%;
+	background-position:center;
 	background-color:#321515;
+}
+
+.play {
+	background-image:url('play.png');
+}
+
+.pause {
+	background-image:url('pause.png');
+}
+
+.controls:hover {
+	background-color:#c1a2a2;
 }
 
 #timeline {
@@ -120,7 +135,9 @@ article {
 	padding:10px;
 }
 
-
+audio {
+	display:none;
+}
 
 
 

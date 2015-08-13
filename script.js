@@ -1,19 +1,26 @@
 $(document).ready(function() {
-	var music = new Audio('09 We Made You.mp3');
-	
-	$('.pause').hide();
-	
-	$('.play').click(function() {
-		music.play();
-		$('img ~ img').show();
-		$(this).hide();
+
+	var music = document.createElement('audio');
+	var song;
+	$('.controls').click(function() {
+		var but = $(this);
+
+		if (music.paused) {
+			song = but.attr('song');
+			music.setAttribute('src',song)
+			music.play();
+			$('.controls').removeClass('pause');
+			$('.controls').addClass('play');
+			but.removeClass('play');
+			but.addClass('pause');
+		} else {
+			music.pause();
+			$('.controls').removeClass('pause');
+			$('.controls').addClass('play');
+		}
+
 	})
 	
-	$('.pause').click(function() {
-		music.pause();
-		$('.play').show();
-		$('.pause').hide();
-	})
 	
 	var duration;
 	music.addEventListener("timeupdate", timeUpdate, false);
