@@ -1,0 +1,162 @@
+/*General Layout*/
+
+* {
+	font-family:"Helvetica Neue", Helvetica;
+	box-sizing: border-box;
+	color:#c1a2a2;
+	padding:0;
+	margin:0;
+}
+
+body {
+	background-color:#321515;
+	
+}
+
+/*Page Formatting*/
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+	float: left;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}ß
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*Logo and Navigation*/
+
+header img{
+	margin:auto;
+	display:block;
+	width:200px;
+}
+
+ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+li {
+	text-align:center;
+	font-size:30px;
+}
+
+a:link {
+	text-decoration:none;
+}
+
+a:hover {
+	color:#ffaaaa;
+}
+
+nav {
+	margin:50px 0;
+}
+
+#open {
+	text-decoration:underline;
+}
+
+/*Other Shit*/
+
+h1 {
+	margin-bottom:20px;
+}
+
+
+
+.left {
+	height:500px;
+}
+
+.controls {
+	width:130px;
+	height:130px;
+	float:left;
+	border-radius:50%;
+	background-size:80%;
+	background-position:center;
+	background-color:#321515;
+}
+
+.play {
+	background-image:url('play.png');
+}
+
+.pause {
+	background-image:url('pause.png');
+}
+
+.controls:hover {
+	background-color:#c1a2a2;
+}
+
+#timeline {
+	width: 70%;
+	height: 15px;
+	background: #321515;
+	margin-left:5%;
+	float:left;
+	border-radius:12px;
+}
+
+#playhead {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	background: #c1a2a2;
+}
+
+.details {
+	float:left;
+	margin:20px;
+	margin-left:38px;
+}
+
+article {
+	background-color:#230b0b;
+	margin:25px 0;
+	padding:10px;
+}
+
+audio {
+	display:none;
+}
+
+
+
+
+
+
+
+
